@@ -1,7 +1,7 @@
 # Airline Analytics & AI Platform
 **Airline Analytics & AI - Decision Intelligence Platform**
 
-A portfolio-grade airline analytics platform combining commercial analytics, customer intelligence, machine learning, and grounded local Generative AI in a Streamlit decision-support application.
+A portfolio-grade airline analytics platform combining commercial analytics, customer intelligence, machine learning, and grounded local Generative AI assistant in a Streamlit decision-support application.
 
 **Author: Faisal Chohan**
 
@@ -254,7 +254,7 @@ An R² of approximately **0.275** indicates modest explanatory power. The model 
 
 ---
 
-## Grounded Local Generative AI
+## Grounded Local Generative AI Assistant
 
 The AI Analytics Assistant uses targeted analytics context rather than sending the entire dataset to the LLM.
 
