@@ -3,8 +3,6 @@
 
 A portfolio-grade airline analytics platform combining commercial analytics, customer intelligence, machine learning, and grounded local Generative AI assistant in a Streamlit decision-support application.
 
-**Author: Faisal Chohan**
-
 ---
 
 ## Project Overview
@@ -25,6 +23,20 @@ The platform demonstrates an end-to-end Data Science workflow:
 **Data → SQL/Pandas Analytics → Business KPIs → Machine Learning → Grounded GenAI → Decision Support**
 
 The objective is to demonstrate how analytical evidence can be translated into practical commercial and operational decisions.
+
+---
+
+## Key Findings
+
+The analysis produced the following key business and customer insights:
+
+- Identified four behavioural customer segments using K-Means clustering.
+- Developed an XGBoost model to estimate customer lifetime value from observed customer behaviour.
+- Identified differences in customer value, flight frequency, and recency across behavioural segments.
+- Analysed route-level revenue, passenger volume, load factor, and revenue per flight to support route performance assessment.
+- Compared revenue contribution, ticket-flight share, average fare, and fare-class mix across cabin classes.
+- Evaluated fleet and aircraft performance using commercial and operational metrics.
+- Built a grounded local GenAI assistant that uses calculated analytics to answer business questions without relying on external APIs.
 
 ---
 
