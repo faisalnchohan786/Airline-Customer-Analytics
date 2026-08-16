@@ -1,5 +1,5 @@
 # Airline Analytics & AI Platform
-**Airline Analytics & AI — Decision Intelligence Platform**
+**Airline Analytics & AI - Decision Intelligence Platform**
 
 A portfolio-grade airline analytics platform combining commercial analytics, customer intelligence, machine learning, and grounded local Generative AI in a Streamlit decision-support application.
 
