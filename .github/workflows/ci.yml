@@ -26,5 +26,26 @@ jobs:
       - name: Compile Python modules
         run: python -m compileall app src tests
 
+      - name: Verify test database
+        run: |
+          echo "Current directory:"
+          pwd
+
+          echo "Repository commit:"
+          git rev-parse HEAD
+
+          echo "Test fixture directory:"
+          ls -lah tests/fixtures
+
+          echo "Checking test database:"
+          test -f tests/fixtures/test_airline.sqlite
+
+          echo "Database details:"
+          ls -lh tests/fixtures/test_airline.sqlite
+
+          python -c "from pathlib import Path; p=Path('tests/fixtures/test_airline.sqlite'); print('Path:', p.resolve()); print('Exists:', p.exists()); print('Size:', p.stat().st_size)"
+
+          python -c "import sqlite3; c=sqlite3.connect('tests/fixtures/test_airline.sqlite'); print('SQLite OK:', c.execute('SELECT sqlite_version()').fetchone()[0]); c.close()"
+
       - name: Run tests
         run: pytest
