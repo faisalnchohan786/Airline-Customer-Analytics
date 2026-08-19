@@ -339,14 +339,29 @@ Airline-Customer-Analytics/
 │
 ├── .github/
 │   └── workflows/
+│       └── ci.yml
 │
 ├── app/
 │   ├── components/
+│   │   └── ...
+│   │
 │   ├── views/
+│   │   ├── __init__.py
+│   │   ├── about_project.py
+│   │   ├── ai_assistant.py
+│   │   ├── clv_prediction.py
+│   │   ├── customer_analytics.py
+│   │   ├── customer_segmentation.py
+│   │   ├── executive_overview.py
+│   │   ├── fleet_analytics.py
+│   │   ├── revenue_analytics.py
+│   │   └── route_analytics.py
+│   │
 │   ├── __init__.py
 │   └── app.py
 │
 ├── assets/
+│   └── ...
 │
 ├── data/
 │   ├── travel.sqlite
@@ -356,6 +371,7 @@ Airline-Customer-Analytics/
 │   ├── images/
 │   │   ├── airline-analytics-architecture.png
 │   │   └── airline-analytics-linkedin-overview.png
+│   │
 │   ├── ARCHITECTURE.md
 │   ├── MODEL_CARD.md
 │   └── RELEASE_NOTES.md
@@ -372,12 +388,26 @@ Airline-Customer-Analytics/
 │   └── xgboost_clv_model.pkl
 │
 ├── notebooks/
+│   ├── Airline_Advanced_Analytics.ipynb
+│   └── Airline_Analytics_Results.xlsx
 │
 ├── src/
+│   ├── analytics/
+│   ├── llm/
+│   ├── models/
+│   ├── __init__.py
+│   └── database.py
 │
 ├── tests/
+│   ├── fixtures/
+│   ├── conftest.py
+│   ├── test_analytics.py
+│   ├── test_database.py
+│   ├── test_llm.py
+│   └── test_models.py
 │
 ├── .env.example
+├── .gitattributes
 ├── .gitignore
 ├── pyproject.toml
 ├── README.md
