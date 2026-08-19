@@ -36,7 +36,6 @@ outputs/
 tests/fixtures/test_airline.sqlite
 
 # Test databases
-tests/fixtures/*.sqlite
 tests/fixtures/*.db
 
 
