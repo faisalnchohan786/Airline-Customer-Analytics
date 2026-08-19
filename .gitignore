@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *.so
+
+# Testing / type checking / linting
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -10,8 +12,7 @@ __pycache__/
 .venv/
 venv/
 env/
-
-
+venv_new/
 
 # Environment / secrets
 .env
@@ -27,18 +28,14 @@ __MACOSX/
 .vscode/
 .idea/
 
-# Local data and generated outputs
+# Local data
 data/*.db
 data/*.csv
 data/*.parquet
+
+# Generated outputs
 outputs/
 *.xlsx
-tests/fixtures/test_airline.sqlite
-
-# Test databases
-tests/fixtures/*.db
-
-
 
 # Logs / caches
 *.log
@@ -46,10 +43,8 @@ tests/fixtures/*.db
 
 # Optional local LLM/model caches
 .ollama/
-venv_new/
-.venv/
-venv/
-__pycache__/
-.ipynb_checkpoints/
-.DS_Store
-.env
+
+# NOTE:
+# data/travel.sqlite is tracked using Git LFS.
+# tests/fixtures/test_airline.sqlite is a small test fixture
+# and is intentionally tracked by Git.
