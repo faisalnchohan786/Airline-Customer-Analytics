@@ -28,7 +28,6 @@ __MACOSX/
 .idea/
 
 # Local data and generated outputs
-data/*.sqlite
 data/*.db
 data/*.csv
 data/*.parquet
