@@ -349,6 +349,7 @@ Airline-Customer-Analytics/
 ├── assets/
 │
 ├── data/
+│   ├── travel.sqlite
 │   └── README.md
 │
 ├── docs/
