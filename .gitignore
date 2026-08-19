@@ -48,3 +48,10 @@ tests/fixtures/*.db
 
 # Optional local LLM/model caches
 .ollama/
+venv_new/
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
