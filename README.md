@@ -27,7 +27,7 @@ The objective is to demonstrate how analytical evidence can be translated into p
 ---
 
 ## Key Findings
-
+ 
 The analysis produced the following key business and customer insights:
 
 - Identified four behavioural customer segments using K-Means clustering.
@@ -339,13 +339,11 @@ Airline-Customer-Analytics/
 │
 ├── .github/
 │   └── workflows/
-│       └── ci.yml
+│       └── ci.yml                    # Automated CI tests
 │
 ├── app/
-│   ├── components/
-│   │   └── ...
-│   │
-│   ├── views/
+│   ├── components/                   # Reusable UI components
+│   ├── views/                        # Streamlit application pages
 │   │   ├── __init__.py
 │   │   ├── about_project.py
 │   │   ├── ai_assistant.py
@@ -356,27 +354,24 @@ Airline-Customer-Analytics/
 │   │   ├── fleet_analytics.py
 │   │   ├── revenue_analytics.py
 │   │   └── route_analytics.py
-│   │
 │   ├── __init__.py
 │   └── app.py
 │
-├── assets/
-│   └── ...
+├── assets/                           # Application assets
 │
 ├── data/
-│   ├── travel.sqlite
-│   └── README.md
+│   ├── travel.sqlite                 # Main SQLite database
+│   └── README.md                     # Data setup instructions
 │
 ├── docs/
 │   ├── images/
 │   │   ├── airline-analytics-architecture.png
 │   │   └── airline-analytics-linkedin-overview.png
-│   │
 │   ├── ARCHITECTURE.md
 │   ├── MODEL_CARD.md
 │   └── RELEASE_NOTES.md
 │
-├── models/
+├── models/                           # Production model artifacts
 │   ├── clv_feature_columns.pkl
 │   ├── clv_prediction_model.pkl
 │   ├── feature_columns.pkl
@@ -392,14 +387,15 @@ Airline-Customer-Analytics/
 │   └── Airline_Analytics_Results.xlsx
 │
 ├── src/
-│   ├── analytics/
-│   ├── llm/
-│   ├── models/
+│   ├── analytics/                    # Analytical/business logic
+│   ├── llm/                          # LLM/AI assistant logic
+│   ├── models/                       # Model loading/inference logic
 │   ├── __init__.py
-│   └── database.py
+│   └── database.py                   # SQLite connection/query layer
 │
 ├── tests/
 │   ├── fixtures/
+│   │   └── test_airline.sqlite       # Test database
 │   ├── conftest.py
 │   ├── test_analytics.py
 │   ├── test_database.py
